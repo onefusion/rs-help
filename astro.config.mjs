@@ -8,6 +8,7 @@ export default defineConfig({
 	site: 'https://docs.rocketscheduler.app',
 	integrations: [
 		starlight({
+			favicon: 'RS-favicon.png',
 			title: 'Rocket Scheduler Docs',
 			social: {
 				github: 'https://github.com/withastro/starlight',

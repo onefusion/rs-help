@@ -5,7 +5,8 @@ template: splash
 hero:
   tagline: Need to report a bug or share feedback?
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/Rocket_Scheduler_logo_no_text.png
+
   actions:
     - text: Report a Bug
       link: https://discord.com/channels/1274919286585954325/1274921311730270299
@@ -13,23 +14,56 @@ hero:
     - text: Share feedback
       link: https://discord.com/channels/1274919286585954325/1282850964990070838
       icon: discord
+	
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import { LinkCard } from '@astrojs/starlight/components';
+import { Badge } from '@astrojs/starlight/components';
+import { Icon } from '@astrojs/starlight/components';
 
-## Next steps
+## Help Resources
 
 <CardGrid stagger>
 	<Card title="Players" icon="laptop">
-		Edit `src/content/docs/index.mdx` to see this page change.
+   <Badge text="Discord Bot Command" variant="tip" />
+   - [/my-availability](../discord-bot-commands/my-availability)
+   - [/my-tier](../discord-bot-commands/my-tier)
+
 	</Card>
 	<Card title="Team Captains & Coaches" icon="seti:smarty">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
+   <Badge text="Discord Bot Command" variant="tip" />
+   - [/next-matchup](../discord-bot-commands/next-matchup)
+   - [/lobby](../discord-bot-commands/lobby)
+   - [/report](../discord-bot-commands/report)
+
 	</Card>
 	<Card title="League Admin" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
+   <Badge text="Discord Bot Command" variant="tip" />
+   \{coming soon}
+   	</Card>
 	<Card title="Setup Guide" icon="rocket">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+		<Badge text="Help setting up Rocket Scheduler" variant="note" />
+		- [Adding the Discord Bot to your server](../guides/adding-discord-bot)
+		- [Getting Started with a league](../guides/setting-up-a-league)
 	</Card>
+
+	<Card title="Web App" icon="seti:odata">
+	<Badge text="Info on the web app" variant="note" />
+	- Use the provided links, Do not try to type in links yourself to navigate to other pages on the web app.
+	- After submitting, you can view your availability, but must close the tab and run [/my-availability](../discord-bot-commands/my-availability) again.
+	- This goes for all commands to the web app, if you need a new link, you must request it again.
+
+	</Card>
+	
+	<Card title="Support" icon="discord">
+	<Badge text="Contact Us!" variant="success" />
+	
+	
+	<LinkCard icon="discord" title="Join the Discord Server" href="https://discord.gg/jCxCht64EZ" /> 
+	 If you have ANY issues and need help with using the bot please reach out directly to 
+	```@Rob```, ```@FBISSsosa```, or ```@FriendlyFennec``` for assistance. 
+
+	</Card>
+
 </CardGrid>

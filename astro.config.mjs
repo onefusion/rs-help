@@ -4,7 +4,7 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://onefusion.github.io',
+	site: 'https://docs.rocketscheduler.app',
 	integrations: [
 		starlight({
 			title: 'Rocket Scheduler Docs',

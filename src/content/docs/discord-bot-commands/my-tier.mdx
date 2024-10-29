@@ -1,0 +1,24 @@
+---
+title: /my-tier
+description: Get a link to the webapp for user to see their tier team's availability.
+template: doc
+hero:
+  tagline: Get a link to the webapp for user to see their tier team's availability.
+  image:
+    file: ../../../assets/Rocket_Scheduler_logo_no_text.png
+
+  
+---
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+Using this command you will be given a time-sensative link to the web app to view your tier team's availability. 
+The link will remain active for 10 minutes after it is generated before becoming invalid. 
+Use the discord bot command again to recieve a new link. 
+
+Hovering over each time slot will show player's availability that has been filled in. 
+
+
+
+<LinkCard title="Report a Bug" href="https://discord.com/channels/1274919286585954325/1274921311730270299" 
+description="If a link does not resolve to the domain: rocketscheduler.app, please do not use that link and report a bug immediately." />

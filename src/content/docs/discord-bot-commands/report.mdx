@@ -1,0 +1,31 @@
+---
+title: /report
+description: Providing a valid ballchasing link and win result, a player can report a match. 
+
+template: doc
+hero:
+  tagline: /report {ballchasing-link} {win_result}. Report the results of a match with a ballchasing link and win result.
+
+  image:
+    file: ../../../assets/Rocket_Scheduler_logo_no_text.png
+
+  
+---
+
+import { LinkCard } from '@astrojs/starlight/components';
+import { Card } from '@astrojs/starlight/components';
+
+
+> #### \{ballchasing-link} #### 
+> The ballchasing link must be a valid link provided by the ballchasing service for the match to be reported. 
+
+>#### \{win_result} ####
+>Win  or  W
+
+Using this command a player can provide a ballchasing link and win result to report the outcome of a match. 
+The player reporting is intended to be a member of the winning team. 
+
+The discord bot will guide the user in adding the arguments. 
+
+<Card title="Please Note!" icon="information">You are required to run the /report command only from within the designated match-report channel of your Discord server.</Card>
+

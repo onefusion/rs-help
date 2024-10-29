@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://docs.rocketscheduler.app',
@@ -11,18 +12,28 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/withastro/starlight',
 			},
+			tableOfContents:false,
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Discord Bot Commands',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: '/my-availability', slug: 'discord-bot-commands/my-availability' },
+						{ label: '/my-tier', slug: 'discord-bot-commands/my-tier' },
+						{ label: '/next-matchup', slug: 'discord-bot-commands/next-matchup' },
+						{ label: '/lobby', slug: 'discord-bot-commands/lobby' },
+						{ label: '/report', slug: 'discord-bot-commands/report' },
 					],
 				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+				{	
+					label: 'User Guides',
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Adding the Discord Bot', slug: 'guides/adding-discord-bot' },
+						{ label: 'Setting up a League', slug: 'guides/setting-up-a-league' },
+					],
 				},
+				
 			],
 		}),
 	],

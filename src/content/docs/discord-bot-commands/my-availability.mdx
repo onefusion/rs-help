@@ -1,0 +1,23 @@
+---
+title: /my-availability
+description: Gets a link to the webapp for user to fill out availability.
+template: doc
+
+hero:
+  tagline: Gets a link to the webapp for user to fill out availability.
+  image:
+    file: ../../../assets/Rocket_Scheduler_logo_no_text.png
+
+
+---
+
+import { LinkCard } from '@astrojs/starlight/components';
+
+
+Using this command you will be given a time-sensative link to the web app to access your availability. 
+The link will remain active for 10 minutes after it is generated before becoming invalid. 
+Use the discord bot command again to recieve a new link. 
+
+
+<LinkCard title="Report a Bug" href="https://discord.com/channels/1274919286585954325/1274921311730270299" 
+description="If a link does not resolve to the domain: rocketscheduler.app, please do not use that link and report a bug immediately." />

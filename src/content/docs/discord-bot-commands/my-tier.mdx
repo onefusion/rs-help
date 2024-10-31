@@ -2,15 +2,19 @@
 title: /my-tier
 description: Get a link to the webapp for user to see their tier team's availability.
 template: doc
-hero:
-  tagline: Get a link to the webapp for user to see their tier team's availability.
-  image:
-    file: ../../../assets/Rocket_Scheduler_transparent_alt.png
-
   
 ---
 
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import headerImage from "../../../assets/Rocket_Scheduler_transparent_alt.png"; 
 import { LinkCard } from '@astrojs/starlight/components';
+
+<Image src={headerImage} alt="rocketscheduler logo." width="240px" align="right"/>
+<Badge text="Discord Bot Command" variant="tip" />
+<Badge text="Players" variant="note" />
+
+##### Get a link to the webapp for user to see their tier team's availability. #####
 
 Using this command you will be given a time-sensative link to the web app to view your tier team's availability. 
 The link will remain active for 10 minutes after it is generated before becoming invalid. 

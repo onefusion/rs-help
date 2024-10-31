@@ -1,21 +1,20 @@
 ---
-title: /next-matchup
-description: Get a link to the webapp for user to view the availability for their tier team's and the opposing tier team's availabilities.
+title: /my-availability
+description: Gets a link to the webapp for user to fill out availability.
 template: doc
-
 ---
-
 import { Badge } from '@astrojs/starlight/components';
 import { Image } from 'astro:assets';
 import headerImage from "../../../assets/Rocket_Scheduler_transparent_alt.png"; 
+
 import { LinkCard } from '@astrojs/starlight/components';
 
 <Image src={headerImage} alt="rocketscheduler logo." width="240px" align="right"/>
 <Badge text="Discord Bot Command" variant="tip" />
-<Badge text="Team Captain / Coach" variant="note" />
+<Badge text="Players" variant="note" />
+##### Gets a link to the webapp for user to fill out availability. #####
 
-##### Get a link to the webapp for user to view the availability for their tier team's and the opposing tier team's availabilities. #####
-Using this command you will be given a time-sensative link to the web app to view the availabilities of your, and your opponent, tier team. 
+Using this command you will be given a time-sensative link to the web app to access your availability. 
 The link will remain active for 10 minutes after it is generated before becoming invalid. 
 Use the discord bot command again to recieve a new link. 
 

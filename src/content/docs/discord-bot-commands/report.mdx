@@ -1,20 +1,20 @@
 ---
 title: /report
 description: Providing a valid ballchasing link and win result, a player can report a match. 
-
-template: doc
-hero:
-  tagline: /report {ballchasing-link} {win_result}. Report the results of a match with a ballchasing link and win result.
-
-  image:
-    file: ../../../assets/Rocket_Scheduler_transparent_alt.png
-
   
 ---
 
-import { LinkCard } from '@astrojs/starlight/components';
 import { Card } from '@astrojs/starlight/components';
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import headerImage from "../../../assets/Rocket_Scheduler_transparent_alt.png"; 
+import { LinkCard } from '@astrojs/starlight/components';
 
+<Image src={headerImage} alt="rocketscheduler logo." width="240px" align="right"/>
+<Badge text="Discord Bot Command" variant="tip" />
+<Badge text="Team Captain / Coach" variant="note" />
+
+##### /report \{ballchasing-link} \{win_result}. Report the results of a match with a ballchasing link and win result. #####
 
 > #### \{ballchasing-link} #### 
 > The ballchasing link must be a valid link provided by the ballchasing service for the match to be reported. 

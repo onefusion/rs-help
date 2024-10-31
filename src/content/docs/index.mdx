@@ -21,6 +21,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 import { LinkCard } from '@astrojs/starlight/components';
 import { Badge } from '@astrojs/starlight/components';
 import { Icon } from '@astrojs/starlight/components';
+import { Code } from '@astrojs/starlight/components';
+
 
 ## Help Resources
 
@@ -54,6 +56,10 @@ import { Icon } from '@astrojs/starlight/components';
 	- After submitting, you can view your availability, but must close the tab and run [/my-availability](../discord-bot-commands/my-availability) again.
 	- This goes for all commands to the web app, if you need a new link, you must request it again.
 
+	<Badge text="Timezone Notice" variant="caution" />
+	Timezones and daylight savings time is really complicated to code around. 
+	Currently this app will operate internally around one timezone. During daylight savings time scheduling may be weird.
+	Please double check to confirm your local time if you are not operating in the server's timezone.
 	</Card>
 	
 	<Card title="Support" icon="discord">

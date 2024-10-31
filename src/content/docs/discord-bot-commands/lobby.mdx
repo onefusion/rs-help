@@ -3,14 +3,18 @@ title: /lobby
 description: Gets the name and password for your next match.
 
 template: doc
-hero:
-  tagline: Gets the name and password for your next match.
-  image:
-    file: ../../../assets/Rocket_Scheduler_transparent_alt.png
-
   
 ---
 
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import headerImage from "../../../assets/Rocket_Scheduler_transparent_alt.png"; 
 import { LinkCard } from '@astrojs/starlight/components';
+
+<Image src={headerImage} alt="rocketscheduler logo." width="240px" align="right"/>
+<Badge text="Discord Bot Command" variant="tip" />
+<Badge text="Team Captain / Coach" variant="note" />
+
+##### Gets the name and password for your next match. #####
 
 Using this command will generate a username and password to use to create a private lobby for a matchup.

@@ -3,16 +3,17 @@ title: Adding the Discord Bot to your Server
 description: Steps to add the discord bot to your server.
 
 template: doc
-hero:
-  tagline: /report {ballchasing-link} {win_result}. Report the results of a match with a ballchasing link and win result.
-
-  image:
-    file: ../../../assets/Rocket_Scheduler_transparent_alt.png
-
   
 ---
+import { Badge } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import headerImage from "../../../assets/Rocket_Scheduler_transparent_alt.png"; 
 import { Steps } from '@astrojs/starlight/components';
 import { LinkCard } from '@astrojs/starlight/components';
+
+<Image src={headerImage} alt="rocketscheduler logo." width="240px" align="right"/>
+<Badge text="User Guides" variant="success" />
+##### Steps to add the discord bot to your server. #####
 
 <Steps>
 
